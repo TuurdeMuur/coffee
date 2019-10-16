@@ -9,13 +9,54 @@ html {
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
   width: 41.1rem;
+  font-family: var('--fontfamily');
 }
 
 header {
   background-color: var('--pinkColor');
+  padding: var('--marginMedium');
+}
+
+.h1-like {
+  display: block;
+  margin-top: var('--marginTiny');
+  font-size: var('--fontsizebig');
+}
+
+.h2-like {
+  font-size: var('--fontsizeSmall');
+}
+
+.prices {
+  background-color: var('--pinkColor');
+}
+
+.header__titles--h1 {
+  display: flex;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.content {
+  padding: var('--marginMedium');
+}
+
+.emptystate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emptystate__content {
+  color: var('--grayColor');
+  font-size: var('--fontsizeMedium');
+  margin-top: 1.8rem;
 }
