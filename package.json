@@ -22,17 +22,20 @@
     "style-loader": "^1.0.0",
     "stylelint-config-devine": "^2.0.2",
     "url-loader": "^2.1.0",
-    "webpack": "^4.40.2",
+    "webpack": "^4.41.2",
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0"
   },
   "scripts": {
     "dev": "webpack-dev-server --mode development",
-    "prod": "rm -rf dist/ && webpack --mode production"
+    "prod": "rm -rf public/ && webpack --mode production",
+    "build": "yarn prod"
   },
   "browserslist": [
     "last 2 versions",
     "> 1%",
     "not dead"
-  ]
+  ],
+  "repository": "https://github.com/TuurdeMuur/coffee.git",
+  "author": "Tuur Mattheeuws <tuur.mattheeuws@student.howest.be>"
 }

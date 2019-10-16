@@ -1,6 +1,15 @@
 :root {
-  --backgroundColor: #eaeae9;
-  --textColor: #463636;
-  --anotherColor: #bada55;
-  --margin: 2rem;
+  --pinkColor: #f9d2cb;
+  --textColor: #212121;
+  --buttonColor: #a3f4dc;
+  --grayColor: #9c9c9c;
+  --marginSmall: 1.2rem;
+  --marginMedium: 3rem;
+  --marginBig: 5rem;
+  --marginGrand: 14.5rem;
+  --fontweightThin: 400;
+  --fontweightFat: 700;
+  --fontsizeSmall: 1rem;
+  --fontsizebig: 2.5rem;
+  --fontfamily: roboto, sans-serif;
 }

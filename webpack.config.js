@@ -4,10 +4,11 @@ const postcssPresetEnv = require('postcss-preset-env');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const webpack = require('webpack');
 
-module.exports = (env, {mode}) => {
+module.exports = (env, { mode }) => {
   console.log(mode);
   return {
     output: {
+      path: `${__dirname}/public`,
       filename: '[name].[hash].js'
     },
     devServer: {
@@ -59,7 +60,7 @@ module.exports = (env, {mode}) => {
                 sourceMap: true,
                 plugins: [
                   require('postcss-import'),
-                  postcssPresetEnv({stage: 0})
+                  postcssPresetEnv({ stage: 0 })
                 ]
               }
             }
