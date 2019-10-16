@@ -56,7 +56,19 @@ header {
 }
 
 .emptystate__content {
+  margin-top: 5rem;
   color: var('--grayColor');
   font-size: var('--fontsizeMedium');
   margin-top: 1.8rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7.1rem;
+  background-color: var('--textColor');
+}
+
+.footer__button {
+  margin: var('--marginSmall') 0 var('--marginSmall') 0;
 }
