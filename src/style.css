@@ -6,3 +6,16 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 41.1rem;
+}
+
+header {
+  background-color: var('--pinkColor');
+}
