@@ -33,12 +33,9 @@ header {
   font-size: var('--fontsizeSmall');
 }
 
-.prices {
-  background-color: var('--pinkColor');
-}
-
 .header__titles--h1 {
   display: flex;
+  margin-right: 3rem;
 }
 
 .visually-hidden {
@@ -59,7 +56,6 @@ header {
   margin-top: 5rem;
   color: var('--grayColor');
   font-size: var('--fontsizeMedium');
-  margin-top: 1.8rem;
 }
 
 .footer {
@@ -71,4 +67,48 @@ header {
 
 .footer__button {
   margin: var('--marginSmall') 0 var('--marginSmall') 0;
+}
+
+.prices {
+  background-color: var('--pinkColor');
+  justify-self: center;
+  padding-bottom: var('--marginMedium');
+}
+
+.prices__list {
+  display: grid;
+  grid-template-rows: 6.3rem;
+  grid-template-columns: 17rem 17rem;
+  grid-gap: 1.1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.price__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: var('--marginSmall');
+  border-radius: .5rem;
+}
+
+.price__button__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.price__button__name {
+  font-size: var('--fontsizeMedium');
+}
+
+.price__button__plus {
+  background-color: var('--buttonColor');
+  font-size: var('--fontsizeMedium');
+  padding: 1rem;
+  border-radius: .5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
