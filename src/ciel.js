@@ -1,6 +1,6 @@
 import './style.css';
 import {devineLog} from './js/utility/helpers';
-import data from '../coffees.json';
+import data from './assets/data/coffees.json';
 
 devineLog('Hey, ik ben een JS file');
 const arr = [1, 2, 3];
@@ -76,13 +76,19 @@ const showOrder = (orders, data) => {
           //orderName
           const $spanName = document.createElement('span');
           $spanName.classList.add('order__name');
+          $spanName.textContent = `${coffee.name}`;
           $li.appendChild($spanName);
-          $spanName.innerHTML += `<span class="order__amount">${order.hoeveelheid}x</span>${coffee.name}`;
+          //amount
+          const $spanamount = document.createElement('span');
+          $spanamount.classList.add('order__amount');
+          $spanamount.textContent = `${order.hoeveelheid}x`;
+          $spanName.appendChild($spanamount);
           //price
           const $spanPrice = document.createElement('span');
           $spanPrice.classList.add('order__price');
           $spanPrice.textContent = `€ ${total}`;
           $li.appendChild($spanPrice);
+
           //button
           const $button = document.createElement('button');
           $button.classList.add('remove');
