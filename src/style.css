@@ -15,7 +15,7 @@ body {
 
 main {
   width: 100%;
-  font-family: var('--fontfamily');
+  font-family: var(--fontfamily);
 }
 
 .layout {
@@ -25,20 +25,20 @@ main {
 }
 
 header {
-  background-color: var('--pinkColor');
-  padding: var('--marginMedium');
+  background-color: var(--pinkColor);
+  padding: var(--marginMedium);
   display: flex;
   justify-content: center;
 }
 
 .h1-like {
   display: block;
-  margin-top: var('--marginTiny');
-  font-size: var('--fontsizebig');
+  margin-top: var(--marginTiny);
+  font-size: var(--fontsizebig);
 }
 
 .h2-like {
-  font-size: var('--fontsizeSmall');
+  font-size: var(--fontsizeSmall);
   text-transform: uppercase;
 }
 
@@ -51,7 +51,7 @@ header {
 }
 
 .content {
-  padding: var('--marginMedium') 0 0 0;
+  padding: var(--marginMedium) 0 0 0;
 }
 
 .emptystate {
@@ -62,25 +62,25 @@ header {
 
 .emptystate__content {
   margin-top: 5rem;
-  color: var('--grayColor');
-  font-size: var('--fontsizeMedium');
+  color: var(--grayColor);
+  font-size: var(--fontsizeMedium);
 }
 
 .footer {
   display: flex;
   justify-content: space-around;
-  background-color: var('--textColor');
+  background-color: var(--textColor);
 }
 
 .footer__button {
-  margin: var('--marginSmall') 0 var('--marginSmall') 0;
+  margin: var(--marginSmall) 0 var(--marginSmall) 0;
 }
 
 .prices {
-  background-color: var('--pinkColor');
+  background-color: var(--pinkColor);
   display: flex;
   justify-content: center;
-  padding-bottom: var('--marginMedium');
+  padding-bottom: var(--marginMedium);
 }
 
 .prices__list {
@@ -88,8 +88,8 @@ header {
   grid-template-rows: 6.3rem;
   grid-template-columns: 10rem 10rem;
   grid-gap: 1.1rem;
-  margin-left: var('--marginMedium');
-  margin-right: var('--marginMedium');
+  margin-left: var(--marginMedium);
+  margin-right: var(--marginMedium);
 }
 
 .price__button {
@@ -97,7 +97,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: var('--marginSmall');
+  padding: var(--marginSmall);
   border-radius: .5rem;
 }
 
@@ -111,8 +111,8 @@ header {
 }
 
 .price__button__plus {
-  background-color: var('--buttonColor');
-  font-size: var('--fontsizeMedium');
+  background-color: var(--buttonColor);
+  font-size: var(--fontsizeMedium);
   padding: 1rem;
   border-radius: .5rem;
   width: 1.5rem;
@@ -128,19 +128,19 @@ header {
 }
 
 .total {
-  font-size: var('--fontsizeMedium');
+  font-size: var(--fontsizeMedium);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var('--marginMedium') var('--marginMedium') var('--marginMedium') var('--marginMedium');
+  padding: var(--marginMedium) var(--marginMedium) var(--marginMedium) var(--marginMedium);
   background-color: #fafafa;
   grid-row: 2;
 }
 
 .order {
-  font-size: var('--fontsizeMedium');
+  font-size: var(--fontsizeMedium);
   text-transform: capitalize;
-  margin-top: var('--marginSmall');
+  margin-top: var(--marginSmall);
   padding-bottom: 1rem;
   border-bottom: .1rem solid #fafafa;
   display: grid;
@@ -159,23 +159,23 @@ header {
   grid-row: 1;
   justify-self: flex-end;
   align-self: center;
-  font-size: var('--fontsizeMedium');
-  color: var('--grayColor');
-  margin-right: var('--marginMedium');
+  font-size: var(--fontsizeMedium);
+  color: var(--grayColor);
+  margin-right: var(--marginMedium);
 }
 
 .order__amount {
-  color: var('--pinkColor');
+  color: var(--pinkColor);
   margin-right: 1rem;
 }
 
 .order__name {
   align-self: center;
-  margin-left: var('--marginMedium');
+  margin-left: var(--marginMedium);
 }
 
 .title_mini {
-  margin-left: var('--marginMedium');
+  margin-left: var(--marginMedium);
 }
 
 @media only screen and (min-width: 368px) {
@@ -186,7 +186,7 @@ header {
   }
 
   .price__button__name {
-    font-size: var('--fontsizeMedium');
+    font-size: var(--fontsizeMedium);
   }
 }
 
@@ -198,7 +198,7 @@ header {
   }
 
   .h1-like {
-    font-size: var('--fontsizeGrand');
+    font-size: var(--fontsizeGrand);
   }
 }
 
@@ -253,7 +253,7 @@ header {
   }
 
   .total {
-    padding: var('--marginMedium');
+    padding: var(--marginMedium);
   }
 
   .emptystate {
